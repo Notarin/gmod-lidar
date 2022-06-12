@@ -608,7 +608,6 @@ end
 function SWEP:Reload(forced)
 	self:CallOnClient("Reload")
 	if SERVER then return end
-	if (!forced or type(forced)=="string") and !GetConVar("sv_cheats"):GetBool() then return end
 	for i=1, hitpoints:length() do
 		PopThatMotherfucker()
 	end
@@ -628,7 +627,7 @@ function SWEP:Think()
 		if LocalPlayer():GetActiveWeapon().ScanSound:IsPlaying() then
 			LocalPlayer():GetActiveWeapon().ScanSound:ChangePitch((conesize*-25)+125,0)
 		end
-	elseif self.Owner:KeyDown(IN_SPEED) then
+	elseif self.Owner:KeyDown(IN_ALT1) then
 		conesize = math.Approach(conesize, 0.95, FrameTime()*0.5)
 		if LocalPlayer():GetActiveWeapon().ScanSound:IsPlaying() then
 			LocalPlayer():GetActiveWeapon().ScanSound:ChangePitch((conesize*-25)+125,0)

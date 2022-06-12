@@ -24,9 +24,9 @@ PLAYER.TauntCam = TauntCamera()
 --
 -- See gamemodes/base/player_class/player_default.lua for all overridable variables
 --
-PLAYER.SlowWalkSpeed		= 80
-PLAYER.WalkSpeed 			= 150
-PLAYER.RunSpeed				= 250
+--PLAYER.SlowWalkSpeed		= 80
+--PLAYER.WalkSpeed 			= 150
+--PLAYER.RunSpeed				= 250
 
 --
 -- Set up the network table accessors
