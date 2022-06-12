@@ -11,3 +11,4 @@ Changes & Additons:
 TBA:
 - Write a command that toggles weapon wheel visibility.
 - Make the toggleblindness command no longer invert mouse and other controls.
+- fix vclip
