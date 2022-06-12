@@ -622,12 +622,12 @@ end
 
 function SWEP:Think()
 	if SERVER then return end
-	if self.Owner:KeyDown(IN_DUCK) then
+	if self.Owner:KeyDown(IN_SCORE) then
 		conesize = math.Approach(conesize, 0.05, FrameTime()*0.5)
 		if LocalPlayer():GetActiveWeapon().ScanSound:IsPlaying() then
 			LocalPlayer():GetActiveWeapon().ScanSound:ChangePitch((conesize*-25)+125,0)
 		end
-	elseif self.Owner:KeyDown(IN_ALT1) then
+	elseif self.Owner:KeyDown(IN_USE) then
 		conesize = math.Approach(conesize, 0.95, FrameTime()*0.5)
 		if LocalPlayer():GetActiveWeapon().ScanSound:IsPlaying() then
 			LocalPlayer():GetActiveWeapon().ScanSound:ChangePitch((conesize*-25)+125,0)
