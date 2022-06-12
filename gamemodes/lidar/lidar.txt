@@ -1,0 +1,8 @@
+"lidar"
+{
+	"base"		"base"
+	"title"		"LIDAR"
+	"maps"		"^lidar_"
+	"menusystem"	"1"
+
+}
