@@ -627,7 +627,7 @@ function SWEP:Think()
 		if LocalPlayer():GetActiveWeapon().ScanSound:IsPlaying() then
 			LocalPlayer():GetActiveWeapon().ScanSound:ChangePitch((conesize*-25)+125,0)
 		end
-	elseif self.Owner:KeyDown(IN_USE) then
+	elseif self.Owner:KeyDown(IN_ZOOM) then
 		conesize = math.Approach(conesize, 0.95, FrameTime()*0.5)
 		if LocalPlayer():GetActiveWeapon().ScanSound:IsPlaying() then
 			LocalPlayer():GetActiveWeapon().ScanSound:ChangePitch((conesize*-25)+125,0)
